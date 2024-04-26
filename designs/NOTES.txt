@@ -1,0 +1,13 @@
+
+from datetime import datetime, timezone
+dt = datetime.now(timezone.utc)
+cur.execute('INSERT etc...)
+
+
+import hashlib
+
+def calculate_sha256_hash(string):
+    h = hashlib.new("sha256")
+    h.update(string.encode())
+    return h.hexdigest()
+
